@@ -10,7 +10,7 @@ pipeline {
             steps{
                 withEnv(["HOME=${env.WORKSPACE}"]) {
                     sh 'yarn install --production'
-                    sh 'npm install'
+                    sh 'node /app/src/index.js'
                 }   
             }
         }
