@@ -2,7 +2,7 @@ pipeline {
     agent { label "master" }
     environment {
         ECR_REGISTRY = "244392073887.dkr.ecr.us-east-1.amazonaws.com"
-        APP_REPO_NAME= "techpro-repo/todo-app"
+        APP_REPO_NAME= "techpro-repo/to-do-app"
     }
     stages {
         stage("Run app on Docker"){
