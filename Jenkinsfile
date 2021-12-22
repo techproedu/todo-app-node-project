@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "master" }
+    agent any
     environment {
         ECR_REGISTRY = "244392073887.dkr.ecr.us-east-1.amazonaws.com"
         APP_REPO_NAME= "techpro-repo/to-do-app"
